@@ -113,8 +113,6 @@ const InputForm = () => {
     }
 
     setPatientBillData({ ...tempD });
-
-    console.log(patientBillData)
     setError("")
   }
 
