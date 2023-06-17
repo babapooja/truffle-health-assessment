@@ -23,7 +23,7 @@ const Home = () => {
       <h3 className='text-2xl underline mb-5'>Bills Entered by users</h3>
       <Table data={billData} loading={loading} />
 
-      <Link to='/input-form/create' className='text-pink-500 text-lg mt-10 
+      <Link to='/input-form/create' className='underline text-pink-500 text-lg mt-10 
       hover:font-semibold transition ease-in-out'>Add New Bill Details</Link>
     </div>
   )

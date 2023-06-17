@@ -22,7 +22,7 @@ const Table = ({ data, loading }) => {
                 (<TableMessages message="Loading data..." />) : (
                     data.length > 0 ?
                         (
-                            <tbody className='max-h-64 overflow-y-auto block'>
+                            <tbody className='max-h-80 overflow-y-auto block'>
                                 {data.map(({ id, fname, lname, street_address_1, street_address_2, city, state, county, zip, hospital_name, bill_amount }, index) =>
 
                                     <tr
@@ -30,15 +30,15 @@ const Table = ({ data, loading }) => {
                                         className="border-b transition duration-300 ease-in-out hover:bg-neutral-100 w-full table table-fixed">
                                         <td className="px-6 py-4 font-medium">{index + 1}</td>
                                         <td className="px-6 py-4">{fname + " " + lname}</td>
-                                        <td className="px-6 py-4">{`${street_address_1}, ${street_address_2 && ''}, ${city}, ${county}, ${state}, ${zip} `}</td>
+                                        <td className="px-6 py-4">{`${street_address_1}, ${street_address_2 ? street_address_2 + ' ,' : ' '} ${city}, ${county ? county + ' ,' : ' '} ${state}, ${zip} `}</td>
                                         <td className="px-6 py-4">{hospital_name}</td>
                                         <td className="px-6 py-4">{`$ ${bill_amount}`}</td>
                                         <td className="px-6 py-4">
                                             <div className="flex gap-x-3">
-                                                <Link to="/input-form/edit/1234">
+                                                <Link to={`/input-form/edit/${id}`}>
                                                     <MdEditDocument size={25} className='cursor-pointer hover:text-pink-500 text-gray-700' />
                                                 </Link> |
-                                                <Link to='/details/1234'>
+                                                <Link to={`/details/${id}`}>
                                                     <TbListDetails size={25} className='cursor-pointer hover:text-pink-500 text-gray-700' />
                                                 </Link>
                                             </div>

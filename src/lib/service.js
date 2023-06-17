@@ -10,6 +10,5 @@ export const updateBillDetails = (uri, billDetails) => {
 };
 
 export const getBillDetails = (uri) => {
-  console.log(BASE_URL + uri)
   return axios.get(BASE_URL + uri);
 };
