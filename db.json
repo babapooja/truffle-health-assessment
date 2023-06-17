@@ -1,0 +1,46 @@
+{
+  "bills": [
+    {
+      "fname": "Pooja",
+      "lname": "Baba",
+      "hospital_name": "safasfaf sdfsdf",
+      "street_address_1": "1525 Custis Court",
+      "street_address_2": "",
+      "zip": "30338",
+      "county": "GA",
+      "city": "Dunwoody",
+      "state": "asasf",
+      "bill_amount": "1000",
+      "bill_image": "",
+      "id": 1
+    },
+    {
+      "fname": "Chinmay",
+      "lname": "Padsalgi",
+      "hospital_name": "Northside Hospital",
+      "street_address_1": "1525 custis ct",
+      "street_address_2": "downwoody",
+      "zip": "30338",
+      "county": "GA",
+      "city": "Atlanta",
+      "state": "Georgia",
+      "bill_amount": "1250",
+      "bill_image": "DSC_9548.JPG",
+      "id": 2
+    },
+    {
+      "fname": "Basavraj",
+      "lname": "Baba",
+      "hospital_name": "",
+      "street_address_1": "A-56, Wing 4, Niranjan Complex, Sus-road, Pashan, Pune",
+      "street_address_2": "Near bank of Maharashtra",
+      "zip": "411021",
+      "county": "Maharashtra",
+      "city": "Pune",
+      "state": "asd",
+      "bill_amount": 0,
+      "bill_image": "",
+      "id": 3
+    }
+  ]
+}
