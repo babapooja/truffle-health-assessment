@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getBillDetails } from '../lib/service';
 import TableMessages from '../components/TableMessages';
 import ImageModal from '../components/ImageModal';
-
+import NavBar from '../components/NavBar';
 const Details = () => {
   const { id } = useParams();
   const [details, setDetails] = useState({});
@@ -28,6 +28,7 @@ const Details = () => {
   return (
     <>
     {/* all the details */}
+    <NavBar/>
       <div className='flex flex-col items-center h-[calc(100vh-5rem)]'>
         <h3 className='text-3xl'>Details Page</h3>
         {error ? (<TableMessages message="Something went wrong. Please try again later" />) :

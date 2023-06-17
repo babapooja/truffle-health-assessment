@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { removeItem } from '../lib/service'
 
 const NavBar = () => {
     return (
@@ -11,6 +12,9 @@ const NavBar = () => {
                 </NavLink>
                 <NavLink className={navData => navData.isActive ? 'font-bold' : ''} to="/input-form/create">
                     <p className='text-lg'>New Details</p>
+                </NavLink>
+                <NavLink to="/login" onClick={() => removeItem('username')}>
+                    <p className='text-lg'>Logout</p>
                 </NavLink>
             </div>
 

@@ -12,3 +12,23 @@ export const updateBillDetails = (uri, billDetails) => {
 export const getBillDetails = (uri) => {
   return axios.get(BASE_URL + uri);
 };
+
+export const login = (uri) => {
+  return axios.get(BASE_URL + uri);
+};
+
+export const register = (uri, loginDetails) => {
+  return axios.post(BASE_URL + uri, loginDetails);
+};
+
+export const setItem = (key, value) => {
+  localStorage.setItem(key, value);
+};
+
+export const getItem = (key) => {
+  return localStorage.getItem(key);
+};
+
+export const removeItem = (key) => {
+  localStorage.removeItem(key);
+};
