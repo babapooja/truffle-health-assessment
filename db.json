@@ -1,32 +1,3 @@
 {
-  "bills": [
-    {
-      "fname": "Pooja",
-      "lname": "Baba",
-      "hospital_name": "Northside Hospital",
-      "street_address_1": "1525 Custis Court",
-      "street_address_2": "",
-      "zip": "30338",
-      "county": "",
-      "city": "Dunwoody",
-      "state": "GA",
-      "bill_amount": 1000,
-      "bill_image": "DSC_9548.JPG",
-      "id": 1
-    },
-    {
-      "fname": "Chinmay",
-      "lname": "Padsalgi",
-      "hospital_name": "Emory",
-      "street_address_1": "1525 custis ct",
-      "street_address_2": "downwoody",
-      "zip": "30338",
-      "county": "GA",
-      "city": "Atlanta",
-      "state": "GA",
-      "bill_amount": 1250,
-      "bill_image": "",
-      "id": 2
-    }
-  ]
+  "bills": []
 }
