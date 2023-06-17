@@ -9,9 +9,9 @@ import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 
 function App() {
-  var currentUser = useContext(AuthContext);
   const ProtectedRoute = ({ children }) => {
-    if (!currentUser) {
+    const currentUser = useContext(AuthContext);
+    if (!currentUser.currentUser) {
       return <Navigate to="/login" />;
     }
     return children;
@@ -21,7 +21,8 @@ function App() {
     <div className="min-h-screen h-full w-full min-w-screen flex flex-col align-center">
       <Routes>
         <Route
-          path=""
+          path="/"
+          index
           element={
             <ProtectedRoute>
               <Home />

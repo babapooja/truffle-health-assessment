@@ -77,7 +77,7 @@ const Login = () => {
                     />
                 </div>
                 <p className='text-center'>Not registered?
-                    <Link to="/register" className="text-pink-500 font-medium">Register here</Link>!</p>
+                    <Link to="/register" className="text-pink-500 font-medium"> Register here</Link>!</p>
             </div>
         </div>
 
