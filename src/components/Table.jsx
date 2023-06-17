@@ -2,9 +2,15 @@ import { TbListDetails } from 'react-icons/tb';
 import { MdEditDocument } from 'react-icons/md'
 import { Link } from 'react-router-dom';
 import TableMessages from './TableMessages';
+import { useEffect } from 'react';
 
 
 const Table = ({ data, loading }) => {
+    useEffect(() => {
+        if (data && data.length === 0) {
+            data = []
+        }
+    }, [data])
     return (
         <table className="table-fixed text-left w-4/5 shadow-lg">
             <thead className="border-b border-t font-medium w-[calc(100%-1rem)] table table-fixed">

@@ -11,6 +11,7 @@ const Home = () => {
   useEffect(() => {
     getBillDetails('/bills')
       .then(({ data }) => {
+        console.log(data)
         setBillData(data)
         setTimeout(() => setLoading(false), 2000)
       })
